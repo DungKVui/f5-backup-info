@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="F5 Group Backup: a private utility for encrypted website backups to the operator's Google Drive.">
+  <title>F5 Group Backup</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#242523;background:#f6f3ef}
+    *{box-sizing:border-box}body{margin:0}main{max-width:800px;margin:0 auto;padding:56px 24px 64px}.brand{font-weight:700;letter-spacing:.08em;color:#b8312c;font-size:14px}h1{font-size:clamp(32px,6vw,52px);line-height:1.12;margin:18px 0 24px}h2{font-size:22px;margin:30px 0 12px}p,li{font-size:17px;line-height:1.75}.status{padding:16px 20px;border:1px solid #d9d2c8;border-radius:12px;background:#fff}a{color:#9b2d28;text-underline-offset:4px}a:focus-visible{outline:3px solid #242523;outline-offset:5px}footer{margin-top:40px;padding-top:20px;border-top:1px solid #d9d2c8;font-size:14px;line-height:1.7}code{font-size:.9em;overflow-wrap:anywhere}
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">F5 GROUP BACKUP</div>
+  <h1>Private, encrypted website backups.</h1>
+  <p>F5 Group Backup is an internal utility for the F5 Group website operator. It is designed to store and restore encrypted website backup archives in the operator's Google Drive account using Restic and rclone.</p>
+  <p class="status"><strong>Setup in progress.</strong> The Google Drive connection is being configured. No unattended production backup has been activated.</p>
+  <h2>What the utility does</h2>
+  <ul>
+    <li>Prepares a consistent website database and media backup after the operator approves the snapshot process.</li>
+    <li>Encrypts backup contents with Restic before upload.</li>
+    <li>Uses Google Drive to write, read, verify and manage the utility's backup files for recovery.</li>
+  </ul>
+  <h2>Google Drive access</h2>
+  <p>The requested Google Drive permission is <code>https://www.googleapis.com/auth/drive.file</code>. The utility is intended to work with the files it creates for backup. It does not request access to Gmail or Google Contacts.</p>
+  <p>The operator authorizes the connection through Google. This information page does not provide a sign-in form, request Google passwords or collect OAuth credentials.</p>
+  <p>Read the <a href="privacy.html">F5 Group Backup Privacy Policy</a> for the intended data practices, retention and access controls.</p>
+  <footer>For support, contact the operator using the user-support email displayed on the Google authorization screen for F5 Group Backup. This page describes the backup utility; operational access remains controlled by the operator.</footer>
+</main>
+</body>
+</html>
